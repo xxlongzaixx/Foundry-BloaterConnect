@@ -39,7 +39,7 @@ contract BloaterConnect is ERC20, Ownable {
     bool public isFirstHour = true;
     bool public isLiquidityPoolLive = false;
 
-    constructor() ERC20("Bloater Connect", "BLOATERCON") Ownable(msg.sender) {
+    constructor() ERC20("Bloater Connect", "BLOAT") Ownable(msg.sender) {
         _mint(msg.sender, 500_000_000_000 * 10 ** decimals());
     }
 
